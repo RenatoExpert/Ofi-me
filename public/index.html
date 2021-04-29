@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ofi-me: Quiz</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body style="background-image:url('background.jpg');background-size:400px;text-align:center;">
+	<div style='position:absolute;left:80%;top:0'>
+		<i class="material-icons" style='position:relative;float:right' onclick="window.alert('Clique em Musica para acessar o video original')" title='Hirajoshi Etude, Trilha sonora autoral. Clique em música para acessar no youtube'>
+			help
+		</i>
+		<a style='text-decoration:none' target="_blank" href='https://www.youtube.com/channel/UC1rUKR46HtsmGuzSnc2ZY5A'>
+			<h3 style='margin-bottom:5px;'>
+				Música
+			</h3>
+		</a>
+
+		<audio autoplay loop controls>
+			<source src="https://docs.google.com/uc?export=download&id=1N2V42FmYGQ0wlng38HLAoXqNohgWPuxc">
+		</audio>
+	</div>
+	<h1>Ofi-me, o jogo</h1>
+		<p>Aprenda a diferença entre <b>ofí</b>cio e <b>me</b>morando!</p>
+	<hr>
+	<div id='screen'>
+		<div id='tela0' style='position:relative;top:200px'>
+			<h2>Iniciar Jogo</h2>
+				<button onclick='startgame()'>
+					Clique aqui para iniciar
+				</button>
+		</div>
+		<div id='tela1' style='visibility:hidden;width:33%;position:relative;left:33%'>
+			<h2>Antes de começarmos, primeiro uma breve explicação</h2>
+				<p>Mas afinal... qual a <b>principal</b> diferença entre Ofício e Memorando?</p>
+				<p style='text-decoration:underline'>Para quem enviamos!</p>
+				<p>Em poucas palavras, o <b>memorando</b> é utilizado dentro da <b>mesma empresa</b> ou corporação. É uma comunicação entre seus diversos setores. Já o <b>ofício</b>, é utilizado entre organizações <b>diferentes</b>.</p>
+			<p><button onclick='intro()'>Continuar >></button></p>
+		</div>
+		<div id='tela2' style='visibility:hidden;width:33%;position:absolute;left:33%;top:200px'>
+			<h2>Aprofundando um pouco mais...</h2>
+			<blockquote style='text-align:justify'>
+				"[...]Os ofícios também costumam contar com uma numeração contínua e crescente — controle que facilita a organização interna do que foi emitido e do que foi respondido. As respostas aos ofícios, em geral, também devem citar a referida numeração. O termo ofício, inclusive, vem da palavra oficial, uma vez que se trata de um documento que apresenta caráter formal e tem como objetivo principal oficializar algum ato — razão pela qual é fundamental contar com o controle da entrada e saída de ofícios.<br>[...] o memorando pode ser classificado como um meio de informação externo ou interno que, em geral, são textos curtos, diretos, coesos e claros a fim de facilitar seu entendimento."
+			</blockquote>
+			<p>Extraído de modeloinicial.com.br</p>
+			<button onclick='refs()'>Entendi</button>
+		</div>
+		<div id='tela3' style='visibility:hidden;width:33%;position:relative;left:33%;top:-200px'>
+			<h2>Referências</h2>
+			<ul style='text-align:left'>
+				<li>https://www.orzil.org/noticias/quais-as-diferencas-entre-aviso-memorando-e-oficio/</li>
+				<li>https://modeloinicial.com.br/artigos/oficio-memorando</li>
+			</ul>
+			<p>Eai? Vamos começar o Quizz?</q>
+			<p><button onlick='quizz()'>Vamos!</button></p>
+		</div>
+	</div>
+	<hr>
+	<h2>Créditos</h2>
+		<p>Renato Araújo
+			<br>
+			<a href='https://www.github.com/renatoexpert' target='_blank'>
+				Github.com/renatoexpert
+			</a>
+			<br>
+			<a href="mailto:renatorraraujo@gmail.com"> 
+				renatorraraujo@gmail.com
+			</a>
+		</p>
+	<hr>
+	<script src='/js/main.js'></script>
+</body>
+</html>
