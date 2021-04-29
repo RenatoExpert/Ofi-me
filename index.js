@@ -6,7 +6,7 @@ const path = require ('path');
 app.use(express.static(path.join(__dirname,'public')));
 
 app.get('/', (req,res) => {
-	res.fileSend('/index.html')
+	res.sendFile('/index.html')
 });
 
 app.listen (port, () => {
